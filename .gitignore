@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# venv
+/armadillo_venv/
+
+# vscode
+/.vscode/
+
 # Distribution / packaging
 .Python
 build/
