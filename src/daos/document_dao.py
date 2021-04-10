@@ -11,7 +11,6 @@ class DocumentDao:
     def initialise_document(self):
         self.document.paras = list(self.set_paragraphs())
         self.document.words = list(self.set_words())
-        self.print_word_count()
 
     def set_paragraphs(self):
         counter = 0
@@ -29,7 +28,7 @@ class DocumentDao:
             words = paragraph.split()
             for word in words:
                 if word != '.':
-                    yield
+                    yield word
 
     def print_word_count(self):
         print(len(self.document.words))
