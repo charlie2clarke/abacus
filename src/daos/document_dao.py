@@ -9,6 +9,7 @@ class DocumentDao:
         self.initialise_document()
 
     def initialise_document(self):
+        self.document.tables = self.document.doc.tables
         self.document.paras = list(self.set_paragraphs())
         self.document.words = list(self.set_words())
 
@@ -21,6 +22,12 @@ class DocumentDao:
 
             if not paragraph.style.name.startswith('Heading') and paragraph.text != '':
                 yield paragraph
+        for table in self.document.tables:
+            for row in table.rows:
+                for cell in row.cells:
+                    for paragraph in cell.paragraphs:
+                        if paragraph.text != '':
+                            yield paragraph
 
     def set_words(self):
         for paragraph in self.document.paras:
