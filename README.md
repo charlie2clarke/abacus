@@ -1,2 +1,2 @@
-# armadillo
+# abbacus
 Word counter for assignments
