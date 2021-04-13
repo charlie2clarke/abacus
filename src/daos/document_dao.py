@@ -20,8 +20,10 @@ class DocumentDao:
             paragraph = self.document.doc.paragraphs[counter]
             counter += 1
 
-            if not paragraph.style.name.startswith('Heading') and paragraph.text != '':
+            if not paragraph.style.name.startswith('Heading') and \
+                paragraph.text != '' and not paragraph.text.startswith('Figure'):
                 yield paragraph
+
         for table in self.document.tables:
             for row in table.rows:
                 for cell in row.cells:
@@ -34,7 +36,7 @@ class DocumentDao:
             paragraph = paragraph.text
             words = paragraph.split()
             for word in words:
-                if word != '.':
+                if word != ('.' or '–'):
                     yield word
 
     def print_word_count(self):
