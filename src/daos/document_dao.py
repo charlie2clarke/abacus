@@ -18,7 +18,7 @@ class DocumentDao:
     def set_paragraphs(self):
         counter = 0
 
-        while counter < len(self.document.doc.paragraphs): 
+        while counter < len(self.document.doc.paragraphs):
             paragraph = self.document.doc.paragraphs[counter]
             counter += 1
 
@@ -26,7 +26,7 @@ class DocumentDao:
                 break
 
             if not paragraph.style.name.startswith('Heading') and not paragraph.style.name.startswith('Title') and not paragraph.style.name.startswith('Subtitle') and \
-                paragraph.text != '' and not paragraph.text.startswith('Figure'):
+                    paragraph.text != '' and not paragraph.text.startswith('Figure'):
                 yield paragraph
 
         for table in self.document.tables:
@@ -36,18 +36,13 @@ class DocumentDao:
                         if paragraph.text != '':
                             yield paragraph
 
-    paragraph_count = 0
-
     def set_words(self):
         for paragraph in self.document.paras:
-            self.paragraph_count += 1
-            print(f'Paragraph {self.paragraph_count} style: {paragraph.style.name}')
             paragraph = paragraph.text
             words = paragraph.split()
             for word in words:
-                print(word) 
                 if word != ('.' or '–'):
                     yield word
 
     def print_word_count(self):
-        print(f'words: {len(self.document.words)}')
+        print(f'Words: {len(self.document.words)}')
