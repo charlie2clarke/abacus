@@ -22,13 +22,17 @@ class DocumentDao:
             empty paragraphs, figure captions, and the appendices '''
         counter = 0
 
-        while counter < len(self.document.doc.paragraphs) and self.document.doc.paragraphs[counter].text != 'Appendices':
+        while counter < len(self.document.doc.paragraphs): 
             paragraph = self.document.doc.paragraphs[counter]
             counter += 1
 
-        if not paragraph.style.name.startswith('Heading') and \
-            paragraph.text != '' and not paragraph.text.startswith('Figure'):
-            yield paragraph 
+            if paragraph.text.startswith('Appendix') or paragraph.text.startswith('Appendices'):
+                break
+
+            if not paragraph.style.name.startswith('Heading') and not paragraph.style.name.startswith('Title') and not paragraph.style.name.startswith('Subtitle') and \
+                paragraph.text != '' and not paragraph.text.startswith('Figure'):
+                yield paragraph
+
 
         for table in self.document.tables:
             for row in table.rows:
@@ -37,13 +41,17 @@ class DocumentDao:
                         if paragraph.text != '':
                             yield paragraph
 
+    paragraph_count = 0
+
     def set_words(self):
         ''' Yields words from the paragraphs, excluding full stops and dashes '''
         for paragraph in self.document.paras:
+            self.paragraph_count += 1
+            print('Paragraph ' + str(self.paragraph_count) + ' style:' + str(paragraph.style.name))
             paragraph = paragraph.text
             words = paragraph.split()
             for word in words:
-                print(word)
+                print(word) 
                 if word != ('.' or '–'):
                     yield word
 
