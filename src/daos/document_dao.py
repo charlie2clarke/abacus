@@ -3,6 +3,8 @@ from models.document import Document
 
 
 class DocumentDao:
+    ''' Data access object for interacting with word documents '''
+
     def __init__(self, file_path):
         self.document = Document(file_path)
 
@@ -16,11 +18,14 @@ class DocumentDao:
     def set_paragraphs(self):
         counter = 0
 
-        while self.document.doc.paragraphs[counter].text != 'Appendices':
+        while counter < len(self.document.doc.paragraphs): 
             paragraph = self.document.doc.paragraphs[counter]
             counter += 1
 
-            if not paragraph.style.name.startswith('Heading') and \
+            if paragraph.text.startswith('Appendix') or paragraph.text.startswith('Appendices'):
+                break
+
+            if not paragraph.style.name.startswith('Heading') and not paragraph.style.name.startswith('Title') and not paragraph.style.name.startswith('Subtitle') and \
                 paragraph.text != '' and not paragraph.text.startswith('Figure'):
                 yield paragraph
 
@@ -31,13 +36,18 @@ class DocumentDao:
                         if paragraph.text != '':
                             yield paragraph
 
+    paragraph_count = 0
+
     def set_words(self):
         for paragraph in self.document.paras:
+            self.paragraph_count += 1
+            print(f'Paragraph {self.paragraph_count} style: {paragraph.style.name}')
             paragraph = paragraph.text
             words = paragraph.split()
             for word in words:
+                print(word) 
                 if word != ('.' or '–'):
                     yield word
 
     def print_word_count(self):
-        print(len(self.document.words))
+        print(f'words: {len(self.document.words)}')
