@@ -12,6 +12,7 @@ class DocumentDao:
 
         self.initialise_document()
 
+    @property
     def document_loaded(self):
         return self.document.doc is not None
 
