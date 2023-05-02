@@ -7,8 +7,13 @@ class DocumentDao:
 
     def __init__(self, file_path):
         self.document = Document(file_path)
+        if self.document.doc == None:
+            return
 
         self.initialise_document()
+
+    def document_loaded(self):
+        return self.document.doc is not None
 
     def initialise_document(self):
         self.document.tables = self.document.doc.tables
