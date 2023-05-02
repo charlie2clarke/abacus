@@ -10,15 +10,9 @@ class Document:
 
         try:
             self.doc = docx.Document(file_path)
-        except FileNotFoundError:
-            print("File not found. Please ensure the file path is correct and not contained within speech or quotation marks.")
-        except PermissionError:
-            print("Permission denied. Please ensure the file is not open in another program.")
         except PackageNotFoundError:
             print("Package not found. Please ensure the file is closed in other programs and has a valid '.docx' format.")
-        except Exception as e:
-            print(f"An unexpected error occurred: {str(e)}.\nPlease ensure the following:\n\t1. The file path is correct.\n\t2. The file path is not contained within speech or quotation marks.\n\t3. The file is not open in another program.")
-            return
+            return 
 
         self.tables = []
         self.paras = []
