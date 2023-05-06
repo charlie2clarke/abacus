@@ -7,7 +7,7 @@
   <img alt="Python" src="https://img.shields.io/badge/Python-%233776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>
 </p>
 
-## Setup
+### Setup
 It is preferable that a virtualenv is created. 
 
 ### Virtualenv
