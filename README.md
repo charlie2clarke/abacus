@@ -7,17 +7,41 @@
   <img alt="Python" src="https://img.shields.io/badge/Python-%233776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>
 </p>
 
+### Setup
+It is preferable that a virtualenv is created. 
+
+### Virtualenv
+https://docs.python.org/3/library/venv.html
+
+To create a venv run:
+```
+$ python -m venv venv
+```
+
+For Windows (using Powershell) run:
+```
+$ venv\Scripts\Activate.ps1
+```
+
+For Mac/Linux run:
+```
+$ source venv/bin/activate
+```
+
+### Requirements
+```
+$ pip install -r requirements.txt
+```
+
 ### Contributing
 <p>
-  Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-  
-  If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+  If you have a suggestion that would make this better, please fork the repo and create a pull request.
   <ol>
     <li>Fork the Project</li>
-    <li>Create your Feature Branch (`git checkout -b feature/AmazingFeature`)</li>
-    <li>Commit your Changes (`git commit -m 'Add some AmazingFeature'`)</li>
-    <li>Push to the Branch (`git push origin feature/AmazingFeature`)</li>
-    <li>Open a Pull Request</li>
+    <li>Create your feature branch (`git checkout -b feature/AmazingFeature`)</li>
+    <li>Commit your changes using conventional commits (`git commit -m 'feat: Add some AmazingFeature'`)</li>
+    <li>Push to the branch (`git push origin feature/AmazingFeature`)</li>
+    <li>Open a pull request</li>
   </ol>
 </p>
 
