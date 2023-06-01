@@ -1,4 +1,4 @@
-lxml==4.6.3
-Pillow==8.2.0
+lxml==4.9.2
+Pillow==9.5.0
 python-docx==0.8.10
-rope==0.18.0
+rope==1.8.0
