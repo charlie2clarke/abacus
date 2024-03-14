@@ -135,3 +135,5 @@ dmypy.json
 .pyre/
 
 *.docx
+!tests/data/*.docx
+*.docx#

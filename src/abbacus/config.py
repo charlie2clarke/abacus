@@ -46,7 +46,6 @@ class Cfg(object):
         CfgOpt(name="titles", value="True", _default_off="False", _type=bool),
         CfgOpt(name="subtitles", value="True", _default_off="False", _type=bool),
         CfgOpt(name="captions", value="True", _default_off="False", _type=bool),
-        CfgOpt(name="figures", value="True", _default_off="False", _type=bool),
         CfgOpt(
             name="ignored_sections",
             value='["Appendices", "Appendix", "Bibliography", "References", "Works Cited"]',
