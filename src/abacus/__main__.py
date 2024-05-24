@@ -13,8 +13,8 @@ from docx.oxml.text.paragraph import CT_P
 from docx.table import Table, _Cell
 from docx.text.paragraph import Paragraph
 
-from abbacus.checks import is_caption, is_heading, is_subtitle, is_title
-from abbacus.config import DEFAULT_CFG_PATH, Cfg, InvalidIgnoredSections
+from abacus.checks import is_caption, is_heading, is_subtitle, is_title
+from abacus.config import DEFAULT_CFG_PATH, Cfg, InvalidIgnoredSections
 
 
 class InputNotFoundException(Exception):

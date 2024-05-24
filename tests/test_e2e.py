@@ -4,8 +4,8 @@ from typing import List
 
 import docx
 
-from abbacus.__main__ import process_doc
-from abbacus.config import Cfg
+from abacus.__main__ import process_doc
+from abacus.config import Cfg
 from tests.util import word_count
 
 
