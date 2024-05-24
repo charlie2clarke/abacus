@@ -103,7 +103,7 @@ def iter_block_items(parent: Document) -> Iterator[Union[Table, Paragraph]]:
             yield Table(child, parent)
 
 
-def should_clear(para: Paragraph) -> bool:
+def should_clear_body_elem(para: Paragraph) -> bool:
     checks = {
         "headings": is_heading,
         "titles": is_title,
@@ -112,7 +112,7 @@ def should_clear(para: Paragraph) -> bool:
     }
 
     for opt, cfg in Cfg().opts.items():
-        if opt == "ignored_sections":
+        if opt in ("bibliography", "ignored_sections"):
             continue
 
         if opt not in checks:
@@ -124,6 +124,14 @@ def should_clear(para: Paragraph) -> bool:
     return False
 
 
+def should_clear_other() -> bool:
+    return Cfg().opts["bibliography"].value
+
+
+def should_clear_nested() -> bool:
+    return Cfg().opts["bibliography"].value
+
+
 def heading_lvl(para: Paragraph) -> int:
     return int(para.style.name.lstrip("Heading "))
 
@@ -133,7 +141,7 @@ def is_ignore_end(para: Paragraph, lvl: int) -> bool:
 
 
 def is_ignore_sect(para: Paragraph) -> bool:
-    ignored_sects = Cfg()._opts["ignored_sections"]
+    ignored_sects = Cfg().opts["ignored_sections"]
     if not ignored_sects:
         return False
     return is_heading(para) and para.text.lower() in [
@@ -141,10 +149,26 @@ def is_ignore_sect(para: Paragraph) -> bool:
     ]
 
 
-def rm_para(para: Paragraph) -> None:
-    p = para._element
-    p.getparent().remove(p)
-    p._p = p._element = None
+def rm_element(elem: CT_P) -> None:
+    elem.getparent().remove(elem)
+    elem._p = elem._element = None
+
+
+# Might need renaming depending on how things like citations and things are handled
+def rm_nested(elem: CT_P) -> None:
+    sdts = elem.xpath("w:sdt")
+    if sdts:
+        for sdt in sdts:
+            sdt.getparent().remove(sdt)
+
+
+# Could just re-use above, but shall see how citations, etc. are handled
+def rm_other(doc: Document) -> None:
+    body = doc._body._element
+    sdts = body.xpath("w:sdt")
+    if sdts:
+        for sdt in sdts:
+            sdt.getparent().remove(sdt)
 
 
 def process_doc(doc: Document) -> Document:
@@ -162,11 +186,15 @@ def process_doc(doc: Document) -> Document:
                     ignored_sect_lvl = heading_lvl(block_item)
 
                 if ignored_sect:
-                    rm_para(block_item)
-                elif should_clear(block_item):
-                    rm_para(block_item)
+                    rm_element(block_item._element)
+                elif should_clear_body_elem(block_item):
+                    rm_element(block_item._element)
+                elif should_clear_nested():
+                    rm_nested(block_item._element)
             elif isinstance(block_item, Table):
                 pass
+        if should_clear_other():
+            rm_other(doc)
     except InvalidDocObject:
         raise
 
@@ -200,6 +228,7 @@ def filename(basename: str, overwrite: bool) -> str:
     type=bool,
 )
 def main(input: str, config: str, overwrite: bool) -> None:
+    filepath = ""
     try:
         Cfg(config)
         dir, basename = parse_input(input)
@@ -219,6 +248,8 @@ def main(input: str, config: str, overwrite: bool) -> None:
     except (FileCopyException, InvalidDocObject) as e:
         logging.error(f"Internal error: {e}")
         raise
+    except PermissionError as e:
+        logging.error(f"You need to close the file {output} before trying again")
     finally:
         if filepath:
             rm_tmp_doc(filepath)

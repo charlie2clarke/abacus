@@ -46,6 +46,7 @@ class Cfg(object):
         CfgOpt(name="titles", value="True", _default_off="False", _type=bool),
         CfgOpt(name="subtitles", value="True", _default_off="False", _type=bool),
         CfgOpt(name="captions", value="True", _default_off="False", _type=bool),
+        CfgOpt(name="bibliography", value="True", _default_off="False", _type=bool),
         CfgOpt(
             name="ignored_sections",
             value='["Appendices", "Appendix", "Bibliography", "References", "Works Cited"]',
@@ -98,7 +99,7 @@ class Cfg(object):
         return cfg
 
     def _write_default_cfg(self) -> List[CfgOpt]:
-        cfg = self._default_cfg(cfg)
+        cfg = self._default_cfg()
         dir = os.path.dirname(self._input)
 
         try:
