@@ -26,6 +26,7 @@ def test_e2e() -> None:
         TestCase(name="strips subtitles", input="subtitles.docx"),
         TestCase(name="strips captions", input="captions.docx"),
         TestCase(name="strips ignored sections", input="ignored_sections.docx"),
+        TestCase(name="strips bibliography", input="bibliography.docx"),
     ]
 
     for test in tests:
