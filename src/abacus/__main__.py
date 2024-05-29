@@ -191,6 +191,19 @@ def process_doc(doc: Document) -> Document:
                     rm_element(block_item._element)
                 elif should_clear_nested():
                     rm_nested(block_item._element)
+
+                pPrs = block_item._element.xpath("//w:pPr")
+                for pPr in pPrs:
+                    styles = pPr.xpath("w:pStyle")
+                    for style in styles:
+                        if style.val == "Caption":
+                            block_item._element._remove_pPr()
+                            # children = block_item._element.iterchildren()
+                            # for child in children:
+                            #     parent = child.getparent()
+                            #     parent.remove(child)
+                            # rm_element(block_item._element)
+                            break
             elif isinstance(block_item, Table):
                 pass
         if should_clear_other():
@@ -234,6 +247,9 @@ def main(input: str, config: str, overwrite: bool) -> None:
         dir, basename = parse_input(input)
         filepath = copy_doc(input)
         doc = load_doc(filepath)
+        with open("debug.xml", "w") as f:
+            xml = doc.element.xml
+            f.write(xml)
         doc = process_doc(doc)
         output = os.path.join(dir, filename(basename, overwrite))
         doc.save(output)

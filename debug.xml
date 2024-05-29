@@ -1,0 +1,224 @@
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
+  <w:body>
+    <w:p w14:paraId="06B016E1" w14:textId="44501D14" w:rsidR="00572630" w:rsidRDefault="00F42EEF">
+      <w:r>
+        <w:t xml:space="preserve">Hey </w:t>
+      </w:r>
+      <w:proofErr w:type="gramStart"/>
+      <w:r>
+        <w:t>there</w:t>
+      </w:r>
+      <w:proofErr w:type="gramEnd"/>
+    </w:p>
+    <w:p w14:paraId="36D9A627" w14:textId="33BBA177" w:rsidR="00F42EEF" w:rsidRDefault="00F42EEF">
+      <w:r w:rsidRPr="00AA1CA7">
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <w:drawing>
+          <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0" relativeHeight="251659264" behindDoc="1" locked="0" layoutInCell="1" allowOverlap="1" wp14:anchorId="402E2194" wp14:editId="44CB1251">
+            <wp:simplePos x="0" y="0"/>
+            <wp:positionH relativeFrom="margin">
+              <wp:posOffset>-307340</wp:posOffset>
+            </wp:positionH>
+            <wp:positionV relativeFrom="paragraph">
+              <wp:posOffset>283845</wp:posOffset>
+            </wp:positionV>
+            <wp:extent cx="6952636" cy="3109495"/>
+            <wp:effectExtent l="0" t="0" r="635" b="0"/>
+            <wp:wrapTopAndBottom/>
+            <wp:docPr id="420" name="Picture 420" descr="A screenshot of a computer&#10;&#10;Description automatically generated"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="420" name="Picture 420" descr="A screenshot of a computer&#10;&#10;Description automatically generated"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId4" cstate="print">
+                      <a:extLst>
+                        <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                          <a14:useLocalDpi xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" val="0"/>
+                        </a:ext>
+                      </a:extLst>
+                    </a:blip>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="6952636" cy="3109495"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+            <wp14:sizeRelH relativeFrom="margin">
+              <wp14:pctWidth>0</wp14:pctWidth>
+            </wp14:sizeRelH>
+            <wp14:sizeRelV relativeFrom="margin">
+              <wp14:pctHeight>0</wp14:pctHeight>
+            </wp14:sizeRelV>
+          </wp:anchor>
+        </w:drawing>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <mc:AlternateContent>
+          <mc:Choice Requires="wps">
+            <w:drawing>
+              <wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0" relativeHeight="251660288" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1" wp14:anchorId="3D8A8850" wp14:editId="069C4B91">
+                <wp:simplePos x="0" y="0"/>
+                <wp:positionH relativeFrom="column">
+                  <wp:posOffset>-306705</wp:posOffset>
+                </wp:positionH>
+                <wp:positionV relativeFrom="paragraph">
+                  <wp:posOffset>3449955</wp:posOffset>
+                </wp:positionV>
+                <wp:extent cx="6952615" cy="635"/>
+                <wp:effectExtent l="0" t="0" r="0" b="0"/>
+                <wp:wrapTopAndBottom/>
+                <wp:docPr id="208" name="Text Box 208"/>
+                <wp:cNvGraphicFramePr/>
+                <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+                  <a:graphicData uri="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+                    <wps:wsp>
+                      <wps:cNvSpPr txBox="1"/>
+                      <wps:spPr>
+                        <a:xfrm>
+                          <a:off x="0" y="0"/>
+                          <a:ext cx="6952615" cy="635"/>
+                        </a:xfrm>
+                        <a:prstGeom prst="rect">
+                          <a:avLst/>
+                        </a:prstGeom>
+                        <a:solidFill>
+                          <a:prstClr val="white"/>
+                        </a:solidFill>
+                        <a:ln>
+                          <a:noFill/>
+                        </a:ln>
+                      </wps:spPr>
+                      <wps:txbx>
+                        <w:txbxContent>
+                          <w:p w14:paraId="4F5F394C" w14:textId="77777777" w:rsidR="00F42EEF" w:rsidRPr="00801D3B" w:rsidRDefault="00F42EEF" w:rsidP="00F42EEF">
+                            <w:pPr>
+                              <w:pStyle w:val="Caption"/>
+                              <w:rPr>
+                                <w:noProof/>
+                              </w:rPr>
+                            </w:pPr>
+                            <w:r>
+                              <w:t xml:space="preserve">Figure </w:t>
+                            </w:r>
+                            <w:r>
+                              <w:fldChar w:fldCharType="begin"/>
+                            </w:r>
+                            <w:r>
+                              <w:instrText xml:space="preserve"> SEQ Figure \* ARABIC </w:instrText>
+                            </w:r>
+                            <w:r>
+                              <w:fldChar w:fldCharType="separate"/>
+                            </w:r>
+                            <w:r>
+                              <w:rPr>
+                                <w:noProof/>
+                              </w:rPr>
+                              <w:t>14</w:t>
+                            </w:r>
+                            <w:r>
+                              <w:rPr>
+                                <w:noProof/>
+                              </w:rPr>
+                              <w:fldChar w:fldCharType="end"/>
+                            </w:r>
+                            <w:r>
+                              <w:t xml:space="preserve"> - IoT dashboard.</w:t>
+                            </w:r>
+                          </w:p>
+                        </w:txbxContent>
+                      </wps:txbx>
+                      <wps:bodyPr rot="0" spcFirstLastPara="0" vertOverflow="overflow" horzOverflow="overflow" vert="horz" wrap="square" lIns="0" tIns="0" rIns="0" bIns="0" numCol="1" spcCol="0" rtlCol="0" fromWordArt="0" anchor="t" anchorCtr="0" forceAA="0" compatLnSpc="1">
+                        <a:prstTxWarp prst="textNoShape">
+                          <a:avLst/>
+                        </a:prstTxWarp>
+                        <a:spAutoFit/>
+                      </wps:bodyPr>
+                    </wps:wsp>
+                  </a:graphicData>
+                </a:graphic>
+              </wp:anchor>
+            </w:drawing>
+          </mc:Choice>
+          <mc:Fallback>
+            <w:pict>
+              <v:shapetype w14:anchorId="3D8A8850" id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+                <v:stroke joinstyle="miter"/>
+                <v:path gradientshapeok="t" o:connecttype="rect"/>
+              </v:shapetype>
+              <v:shape id="Text Box 208" o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-24.15pt;margin-top:271.65pt;width:547.45pt;height:.05pt;z-index:251660288;visibility:visible;mso-wrap-style:square;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;mso-position-horizontal-relative:text;mso-position-vertical:absolute;mso-position-vertical-relative:text;v-text-anchor:top" o:gfxdata="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&#10;AAAABAAEAPMAAAB9BQAAAAA=&#10;" stroked="f">
+                <v:textbox style="mso-fit-shape-to-text:t" inset="0,0,0,0">
+                  <w:txbxContent>
+                    <w:p w14:paraId="4F5F394C" w14:textId="77777777" w:rsidR="00F42EEF" w:rsidRPr="00801D3B" w:rsidRDefault="00F42EEF" w:rsidP="00F42EEF">
+                      <w:pPr>
+                        <w:pStyle w:val="Caption"/>
+                        <w:rPr>
+                          <w:noProof/>
+                        </w:rPr>
+                      </w:pPr>
+                      <w:r>
+                        <w:t xml:space="preserve">Figure </w:t>
+                      </w:r>
+                      <w:r>
+                        <w:fldChar w:fldCharType="begin"/>
+                      </w:r>
+                      <w:r>
+                        <w:instrText xml:space="preserve"> SEQ Figure \* ARABIC </w:instrText>
+                      </w:r>
+                      <w:r>
+                        <w:fldChar w:fldCharType="separate"/>
+                      </w:r>
+                      <w:r>
+                        <w:rPr>
+                          <w:noProof/>
+                        </w:rPr>
+                        <w:t>14</w:t>
+                      </w:r>
+                      <w:r>
+                        <w:rPr>
+                          <w:noProof/>
+                        </w:rPr>
+                        <w:fldChar w:fldCharType="end"/>
+                      </w:r>
+                      <w:r>
+                        <w:t xml:space="preserve"> - IoT dashboard.</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:txbxContent>
+                </v:textbox>
+                <w10:wrap type="topAndBottom"/>
+              </v:shape>
+            </w:pict>
+          </mc:Fallback>
+        </mc:AlternateContent>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="00F42EEF">
+      <w:pgSz w:w="11906" w:h="16838"/>
+      <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
