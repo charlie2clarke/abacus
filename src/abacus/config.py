@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List
 
-DEFAULT_CFG_PATH = Path.home().joinpath(".abbacus", "config.ini")
+DEFAULT_CFG_PATH = Path.home().joinpath(".abacus", "config.ini")
 
 
 class UninitialisedException(Exception):

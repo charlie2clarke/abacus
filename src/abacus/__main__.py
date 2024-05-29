@@ -203,9 +203,9 @@ def process_doc(doc: Document) -> Document:
 
 def filename(basename: str, overwrite: bool) -> str:
     return (
-        f"ABBACUS_{datetime.now().strftime('%d-%m-%Y_%H%M%S')}_{basename}"
+        f"ABACUS_{datetime.now().strftime('%d-%m-%Y_%H%M%S')}_{basename}"
         if not overwrite
-        else f"ABBACUS_{basename}"
+        else f"ABACUS_{basename}"
     )
 
 
@@ -250,6 +250,8 @@ def main(input: str, config: str, overwrite: bool) -> None:
         raise
     except PermissionError as e:
         logging.error(f"You need to close the file {output} before trying again")
+    except Exception as e:
+        logging.error(f"An unknown error occured: {e}")
     finally:
         if filepath:
             rm_tmp_doc(filepath)

@@ -4,7 +4,7 @@ from os.path import basename, splitext
 from setuptools import find_packages, setup
 
 setup(
-    name="abbacus",
+    name="abacus",
     packages=find_packages("src"),
     include_package_data=True,
     package_dir={"": "src"},
